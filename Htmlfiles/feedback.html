@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Opinions</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- fonts for website -->
+    <!--font from google fonts.  https://fonts.google.com/specimen/Roboto -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../CSSfiles/reset.css" />
+    <link rel="stylesheet" href="../CSSfiles/common_styles.css" />
+    <!-- links to stylesheet -->
+
+    <script src="../Javascriptfiles/common.js" defer></script>
+    <!-- Links to javascript files -->
+
+
+    <!-- 
+        File name : feedback.html  
+
+        Subject: Front-end web development CA2 - Interactive Website
+
+        Author: Lim Hur
+
+       Date: 28/7/2021 -->
+</head>
+<!--Details of web page-->
+
+
+<!-- start of content -->
+
+<body id="feedbackBody">
+    <!-- Header (with banner and my name) span full width-->
+    <div class="container-fluid">
+        <!-- Responsive columns -->
+        <header class="row">
+            <section class="col-12 d-flex justify-content-center w-100 spic p-0" >
+                <!-- Centralise text and section width of 100%-->
+                <!-- height of 100% & width of 100%, display-3 for attention -->
+                <h1 class="d-flex justify-content-center display-3 w-100 h-100 p-2">
+                    
+                    Lim Hur
+                </h1>
+                <!-- Typing text -->
+            </section> <!-- Picture from https://industry.sp.edu.sg/co-location/ -->
+    
+            <h1 class="text-center display-5 text-primary col-12">Feedback and Opinions</h1>
+            <!-- Page title center text, and blue color-->
+        </header>
+    </div>
+
+    <!--navigation system-->
+    <!--black bootstrap Nav bar links to other pages with icons, 
+    includes burger icon, collapses when user clicks. Links are not decorated and unstyled as well -->
+    <!-- !!! SVG tags are icons-->
+    <!-- Unordered lists of links, made from bootstrap classes -->
+    <!-- Nav bar expands on the top between small to medium devices -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-2 sticky-top">
+                <nav class="navbar bg-dark navbar-dark mb-2 rounded sticky-top">
+                    <a href="#" class="navbar-brand">Links<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-share ml-2" viewBox="0 0 16 16">
+                            <path
+                                d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                        </svg></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                        <ul class="navbar-nav list-unstyled text-center">
+                            <li class="nav-item mt-2"><a href="index.html"
+                                    class="text-decoration-none nav-link">About
+                                    Me<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg></a></li>
+                            <li class="nav-item "><a href="pastschool.html" class="text-decoration-none nav-link">My
+                                    Past
+                                    School Experiences<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-building ml-1 mb-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                                        <path
+                                            d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                                    </svg></a></li>
+                            <li class="nav-item"><a href="expinSP.html" class="text-decoration-none nav-link">SP &
+                                    School of
+                                    Computing<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-laptop-fill ml-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                                    </svg></a></li>
+                            <li class="nav-item"><a href="daaa.html" class="text-decoration-none nav-link">DAAA & Future
+                                    Endeavours<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cpu-fill ml-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                        <path
+                                            d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+                                    </svg></a></li>
+                            <li class="nav-item active mb-3"><a href="feedback.html"
+                                    class="text-decoration-none nav-link">Feedback and
+                                    Opinions<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chat-right-dots-fill ml-1" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                    </svg></a></li>
+                        </ul>
+
+                        <form>
+                            <div class="form-row">
+                                <input class="mr-sm-2 col form-control" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div><button class="btn btn-outline-light ml-1" type="submit">Search</button></div>
+                            </div>
+                        </form>
+                        <!-- Search bar (form) -->
+
+
+                    </div>
+
+                </nav>
+            </div>
+
+
+            <!-- link icon from https://icons.getbootstrap.com/icons/share/ -->
+            <!-- person icon from https://icons.getbootstrap.com/icons/person-fill/-->
+            <!-- sch building icon from https://icons.getbootstrap.com/icons/building/ -->
+            <!-- laptop icon from https://icons.getbootstrap.com/icons/laptop-fill/ -->
+            <!-- CPU icon from https://icons.getbootstrap.com/icons/cpu-fill/ -->
+            <!-- feedback text icon from https://icons.getbootstrap.com/icons/chat-right-dots-fill/ -->
+
+
+
+            <!-- Feedback h1 -->
+            <!-- Start of form -->
+            <div class="col-md-12 offset-md-2">
+                <div class="h1 text-center bg-light text-dark shadowHeader">Your
+                    feedback for this website is essential</div>
+                <section class="content">
+                    <form action="http://www.example.com/limhur/survey" method="POST" name="feedbackForm" onsubmit="return formValidation()">
+                        <div class="row">
+                            <!-- General information of users -->
+                            <fieldset class="form-group col-md-6 col-sm-12">
+                                <legend class="display-5">General Information</legend>
+                                <hr>
+                                <div class="form-group row">
+                                    <!--Number input from user-->
+                                    <label for="ageSpin" class="col-sm-5 col-form-label">Please provide your age</label>
+                                    <div class="col-sm-3 offset-sm-4"><input type="number" name="age" value="16"
+                                            step="1" min="12" max="100" id="ageSpin" class="form-control"></div>
+                                </div>
+
+<!-- Level of education -->
+                                <div class="form-group">
+                                    <!--selection lists-->
+                                    <label for="level">Please indicate your level of education or otherwise</label>
+                                    <select name="study" id="level" class="form-control">
+                                        <optgroup label="Level">
+                                            <option value="sec1">Secondary 1</option>
+                                            <option value="sec2">Secondary 2</option>
+                                            <option value="sec3">Secondary 3</option>
+                                            <option value="sec4">Secondary 4</option>
+                                            <option value="sec5">Secondary 5</option>
+                                        </optgroup>
+                                        <optgroup label="Parents">
+                                            <option value="parent">Parents of prospective students</option>
+                                        </optgroup>
+                                        <optgroup label="ITE">
+                                            <option value="ite">ITE students</option>
+                                        </optgroup>
+                                    </select>
+
+                                </div>
+                                <!-- radio btns -->
+                                <div class="form-group">
+                                    <label>How likely are you going to recommend the website to a friend?</label>
+                                    <div class="form-check"><label class="form-check-label" for="definitely"><input
+                                                type="radio" name="rate" value="yes" id="definitely"
+                                                class="form-check-input" checked>
+                                            Definitely!</label></div>
+                                    <div class="form-check"><label class="form-check-label" for="neutrals"><input
+                                                type="radio" name="rate" value="neutral" id="neutrals"
+                                                class="form-check-input">Neutral</label></div>
+                                    <div class="form-check"><label class="form-check-label" for="notAtall"><input
+                                                type="radio" name="rate" value="no" id="notAtall"
+                                                class="form-check-input">Not at all</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!--User input email -->
+                                    <label for="emailAdd">Please provide your email address. <b class="text-danger">(Required) *</b></label>
+                                    <input type="email" id="emailAdd" name="address" placeholder="example@mail.com"
+                                        class="form-control">
+                                </div>
+                                <small class="form-text small text-muted">
+                                    Rest assured, we will not reveal any sensitive information you provide.
+                                </small>
+                                <hr class="d-sm-none">
+                            </fieldset>
+<!-- 2nd field set to get user's reviews and opinions -->
+
+                            <fieldset class="form-group col-md-6 col-sm-12">
+                                <legend class="display-5">Your reviews and opinions</legend>
+                                <hr>
+                                
+                                <div class="form-group">
+                                   
+                                    <label>What do you think of the user interface & layout of this website <b
+                                            class="text-danger">(Required)
+                                            *</b></label>
+
+                                            <!-- RADIO BUTTONS -->
+                                    <div class="d-flex justify-content-center">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" value="good" id="vgood" name="layout"
+                                                class="custom-control-input" required />
+                                            <label for="vgood" class="custom-control-label">Very good</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" value="neutral" id="neu" name="layout"
+                                                class="custom-control-input" required />
+                                            <label for="neu" class="custom-control-label">Neutral</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" value="imp" id="improve" name="layout"
+                                                class="custom-control-input" required />
+                                            <label for="improve" class="custom-control-label">Needs improvement</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Rating slider range-->
+                                <div class="form-group">
+                                    <label for="rangeCustom">Please give a rating on how useful this website is for you
+                                        <br>(0=Not
+                                        at all; 10=Very useful)</label>
+                                    <div class="d-flex">
+                                        <span class="mr-2 mt-1">0</span>
+                                        <input class="custom-range" type="range" min="0" max="10" step="1"
+                                            id="rangeCustom" />
+                                        <span class="ml-2 mt-1">10</span>
+                                    </div>
+                                </div>
+
+<!-- Checkbox -->
+                                <div class="form-group custom-control custom-checkbox">
+                                    <!--Checkbox widget-->
+                                    <input type="checkbox" name="mailMe" value="updates" id="email"
+                                        class="custom-control-input">
+                                    <label for="email" class="custom-control-label">Check the box if you are keen on
+                                        receiving emails about future updates!</label>
+                                </div>
+
+<!-- Area box -->
+                                <div class="form-group">
+                                    <!-- text area box widget-->
+                                    <label for="cbox">Questions, if any. Any comments or opinions on website?</label>
+                                    <textarea name="quest" rows="3" id="cbox" class="form-control"></textarea>
+                                </div>
+
+
+                            </fieldset>
+                        </div>
+
+<!-- Submit and reset button with validation -->
+                        <div class="float-right">
+                            <!-- submit and reset button-->
+                            <button type="reset" class="btn btn-outline-primary"
+                                onclick="return clicktoSubmit('cancel')">Reset</button>
+                            <button type="submit" class="btn btn-outline-primary"
+                                onclick="return clicktoSubmit('submit');">Submit</button>
+
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- footer contacts, width 100% -->
+    <footer class="w-100">
+        <div>
+            <hr class="m-1">
+            <h6 class="text-center">Feel free to contact me through the following platforms. &#x1F60F;</h6>
+        </div>
+<!-- Unordered lists of picture that leads to my contacts, pictures are centered-->
+        <ul class="row mb-0 mt-4 list-unstyled">
+            <li class="col d-flex justify-content-center"><a href="mailto:limhur1@gmail.com"><img
+                        src="../Photofiles/Icon4.png" alt="Email"></a></li>
+            <li class="col d-flex justify-content-center"><a href="tel:+65-81234567"><img src="../Photofiles/Icon3.png"
+                        alt="Tel"></a></li>
+            <li class="col d-flex justify-content-center"><a href="https://sg.linkedin.com/"><img
+                        src="../Photofiles/Icon2.png" alt="LinkedIn"></a></li>
+            <li class="col d-flex justify-content-center"><a href="https://www.facebook.com/"><img
+                        src="../Photofiles/Icon1.png" alt="Facebook"></a></li>
+        </ul>
+
+        <!--Links to facebook and Linkedin websites-->
+        <!-- picture from pixabay https://pixabay.com/illustrations/contact-us-contact-business-1908763/
+             picture from pixabay https://pixabay.com/illustrations/contact-us-contact-business-1908763/
+            picture from pixabay https://pixabay.com/illustrations/linked-in-logo-company-editorial-2668700/
+            picture from pixabay https://pixabay.com/vectors/facebook-icon-blue-social-media-1924510/ -->
+
+    </footer>
+
+
+</body>
+
+</html>

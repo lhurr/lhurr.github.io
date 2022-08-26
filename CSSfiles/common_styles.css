@@ -1,0 +1,180 @@
+@charset "utf-8";
+/*
+  
+   Common Style Sheet for Lim hur's Website
+   Author: Lim hur
+   Date: 29/7/21
+   Subject: Front-end web development CA2 - Interactive Website 
+
+   
+   Filename: common_styles.css 
+   Common styles for all 5 web pages
+
+*/
+
+/* Body styles */
+
+body {
+    background: linear-gradient(to bottom left, #c6f1c6, #f3e6e6);
+    /* Background color */
+    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+    /* Transition when page loads */
+}
+
+/* Animation styles, keyframes */
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+/* Top Section picture styles */
+
+section.spic {
+    height: 152px;
+    background-image: url(../Photofiles/header.png);
+    /* Sets a background header image, credits in HTML file */
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 7s linear infinite alternate;
+    /* Animation, keyframe, makes it move from left to right infinitely */
+    filter: grayscale(17%) sepia(4%) brightness(58%) hue-rotate(38deg) saturate(99%);
+    -webkit-filter: grayscale(17%) sepia(4%) brightness(52%) hue-rotate(38deg) saturate(99%);
+    -moz-filter: grayscale(17%) sepia(4%) brightness(52%) hue-rotate(38deg) saturate(99%);
+    /* Sets a filter to be less bright */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* Gives a slightly more rounded edge */
+}
+
+/* Header div styles, rounded edge below */
+
+section.spic>div {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* When page loads via an animation, gives it an opacity of 1  */
+
+.show-time body {
+    opacity: 1;
+}
+
+/* header h1 styles, changed the font and weight */
+
+header h1.text-primary {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* ( first header h1 styles) Gives header, first h1 element a new font, and shadow*/
+
+div header h1:nth-child(1) {
+    font-family: 'Roboto', sans-serif, arial, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 4px 2px 3px lightgray, 7px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* header styles for some pages (sets font, and border, box and text shadow)*/
+
+.shadowHeader {
+    font-family: Arial, Helvetica, sans-serif, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: transparent 2px solid;
+    -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.89);
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.89);
+    border-radius: 7px;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.85);
+}
+
+/* Empty table cell style (pastschool.html)*/
+
+/* gives a diagonal cross which denotes empty */
+
+#empty {
+    background-image: linear-gradient(to bottom left, transparent calc(50% - 1px), black, transparent calc(50% + 1px));
+}
+
+/* Card header text styles (shadow) */
+
+#intro, #diplomaAI, #mySecSCH {
+    text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+}
+
+/* Card header in website to have gradient */
+
+.card-header {
+    background: linear-gradient(to right, #bdc9bd, #ffffff);
+}
+
+/* Give card body a hover color */
+
+.card-body:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+/* Gives cards header in the some pages no background */
+
+#obs, #boardgames, #obs2 {
+    background: none;
+}
+
+/* Gives a more prominent first letter text for the paragraph, increases font size */
+
+article p:first-of-type:first-letter, div p:first-of-type::first-letter {
+    float: left;
+    font-size: 26px;
+    line-height: 0.8;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* Footer styles */
+
+footer img {
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* Makes the image have a smooth transition when hovered and moved away */
+
+/* Footer img hover styles */
+
+footer img:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+    position: relative;
+    bottom: 5px;
+    width: 40px;
+    display: block;
+    z-index: 3;
+    -webkit-box-shadow: 4px 5px 3px -1px #000000;
+    box-shadow: 4px 5px 3px -1px #000000;
+}
+
+/* Makes the image rotate when hovered, with a smooth transition to slightly enlarge the image, as well as giving it a shadow*/
+
+@media (max-width: 360px) {
+    #AIpic, #soclaptop {
+        width: 100%;
+    }
+    #intro {
+        font-size: 30px;
+    }
+}
+
+/* Changes the ai photo and laptop photo to have a width of 100% and introduction font size to 30px 
+  when width of device is below 360px  */
+
+@media (min-width: 1800px) {
+
+    #feedbackBody {
+        height: 100vh;
+    }
+
+
+}
+/* WHen screen above 1800, feedback body set to full */

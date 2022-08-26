@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/*
+  
+   
+   Reset Style Sheet for Lim hur's Website
+   Author: Lim hur
+   Date: 29/7/21
+   Subject: Front-end web development CA2 - Interactive Website 
+
+   
+   Filename: reset.css
+This is for resetting purposes
+*/
+
+/* Structural Styles */
+ article, aside,image, figcaption, figure, footer, header, main, nav, section,h1 , img {
+   display: block;
+   
+} 
+
+
+/* Typographic Styles */
+ * {
+   background:transparent;
+   font-size: 100%;
+   margin-bottom: 0;
+   padding:0;
+   
+   
+   
+}  
+/* nav reset styles */
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+nav a {
+   text-decoration: none;
+   
+}
+/* Footer reset styles */
+footer ol li {
+   list-style: none;
+   text-decoration: none;
+}
